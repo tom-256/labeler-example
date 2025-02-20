@@ -1,9 +1,9 @@
 # Add 'bar' label to any changes in foo/bar directory
 bar:
   - changed-files:
-    - any-glob-to-any-file: '**/*foo/*bar/**'
+    - any-glob-to-any-file: '*/*/*bar/**'
 
 # Add 'foo' label to any changes in foo/foo directory
 foo:
   - changed-files:
-    - any-glob-to-any-file: '**/*foo/*foo/**'
+    - any-glob-to-any-file: '*/*/*foo/**'
