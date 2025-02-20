@@ -7,3 +7,21 @@ foobar:
 foo:
   - changed-files:
     - any-glob-to-any-file: '*/*/*foo/**'
+# Add 'internal-api' label to changes in internal API
+internal-api:
+  - '*/*/*-foo-internal-api/*'
+
+# Add 'internal-api-ivry-call' label to changes in internal API IVRY call
+internal-api-ivry-call:
+  - changed-files:
+    - any-glob-to-any-file: '*/*/*-foo-internal-api-ivry-call/*'
+
+job-runner:
+  - changed-files:
+    - any-glob-to-any-file: '*/*/*-foo-job-runner/*'
+
+job-runner-consumer:
+  - changed-files:
+    - any-glob-to-any-file: '*/*/*-foo-job-runner-consumer/*'
+
+  
