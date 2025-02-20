@@ -7,3 +7,21 @@ foobar:
 foo:
   - changed-files:
     - any-glob-to-any-file: '*/*/*foo/**'
+# Add 'internal-api' label to changes in internal API
+internal-api:
+  - changed-files:
+    - any-glob-to-any-file: '*/*/*-foo-internal-api/*'
+
+# Add 'internal-api-hoge-call' label to changes in internal API HOGE call
+internal-api-hoge-call:
+  - changed-files:
+    - any-glob-to-any-file: '*/*/*-foo-internal-api-hoge-call/*'
+
+job-runner:
+  - changed-files:
+    - any-glob-to-any-file: '*/*/*-foo-job-runner/*'
+
+job-runner-consumer:
+  - changed-files:
+    - any-glob-to-any-file: '*/*/*-foo-job-runner-consumer/*'
+
