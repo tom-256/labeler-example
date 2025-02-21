@@ -1,29 +1,31 @@
 # Add 'bar' label to any changes in foo/bar directory
 foobar:
   - changed-files:
-    - any-glob-to-any-file: '*/*/*foobar/**'
+      - any-glob-to-any-file: "*/*/*foobar/**"
 
 # Add 'foo' label to any changes in foo/foo directory
 foo:
   - changed-files:
-    - any-glob-to-any-file: '*/*/*foo/**'
+      - any-glob-to-any-file: "*/*/*foo/**"
 # Add 'internal-api' label to changes in internal API
 internal-api:
   - changed-files:
-    - any-glob-to-any-file: '*/*/*-foo-internal-api/*'
+      - any-glob-to-any-file: "*/*/*-foo-internal-api/*"
 
 # Add 'internal-api-hoge-call' label to changes in internal API HOGE call
 internal-api-hoge-call:
   - changed-files:
-    - any-glob-to-any-file: '*/*/*-foo-internal-api-hoge-call/*'
+      - any-glob-to-any-file: "*/*/*-foo-internal-api-hoge-call/*"
 
 job-runner:
   - changed-files:
-    - any-glob-to-any-file: '*/*/*job-runner/*'
+      - any-glob-to-any-file:
+          - "*/*/*job-runner/*"
+          - "!*/*/*sync-call-job-runner/*"
 
 job-runner-consumer:
   - changed-files:
-    - any-glob-to-any-file: '*/*/*-foo-job-runner-consumer/*'
+      - any-glob-to-any-file: "*/*/*-foo-job-runner-consumer/*"
 
 sync-call-job-runner:
   - changed-files:
