@@ -19,9 +19,8 @@ internal-api-hoge-call:
 
 job-runner:
   - changed-files:
-      - any-glob-to-any-file:
-          - "*/*/*job-runner/*"
-          - "!*/*/*sync-call-job-runner/*"
+      - any-glob-to-any-file: "*/*/*job-runner/*"
+      - all-glob-to-all-file: "!*/*/*sync-call-job-runner/*"
 
 job-runner-consumer:
   - changed-files:
